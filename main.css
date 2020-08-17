@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Petrona', serif;
+}
+body{
+	background: url(anh5.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+h1{
+	  color: #F80F8D;
+    text-align: center;
+    padding: 33px;
+    font-size: 63px;
+    font-weight: initial;
+}
+.yes{
+	 position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: (-50%,-50%);
+    width: 140px;
+    height: 60px;
+    border: none;
+    border-radius: 35px;
+    background-color: deeppink;
+    font-size: 40px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.yes:hover{
+	width: 150px;
+	height: 70px;
+
+}
+.love{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	background: black;
+}
+.no{
+	position: absolute;
+	top: 50%;
+	right: 25%;
+	/*left: 0;*/
+	cursor: pointer;
+	transform: (-50%,-50%);
+	width: 140px;
+    height: 60px;
+	border: none;
+    border-radius: 35px;
+	font-size: 40px;
+	outline: none;
+
+}
+
+.agree{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top:0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	transition: 1.5s ease-in;
+}
+.content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #F61489;
+	width: 50%;
+	height: 30%;
+	flex-flow: column;
+	    border-style: groove;
+    border-radius: 42px;
+}
+.content input{
+	width: 70%;
+	height: 25%;
+	font-size: 28px;
+	border:none;
+	background-color: transparent;
+	outline: none;
+	border-bottom: 2px solid #241E1E; 
+	margin: 10px 0;
+	text-align: center;
+}
+.content> p{
+	    font-size: 28px;
+    padding: 10px 20px;
+    width: 70%;
+    text-align: center;
+    height: 70px;
+    transform: translateY(20px);
+
+}
+.content a{
+	text-decoration: none;
+    width: 90px;
+    height: 32px;
+    color: #F62039;
+    shape-rendering: ;
+    background-color: #9C0000;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;	
+    border-radius: 4px;
+}
+.content a label{
+	cursor: pointer;
+}
+
+.containerr{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-color: transparent;
+}
+.containerr div{
+	position: relative;
+	display: block;
+	float: left;
+	width: 10%;
+	height: 10vh;
+	box-sizing: border-box;
+}
+.containerr div:hover{
+	z-index: 10000;
+}
+.containerr div:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(anh4.jpg);
+	background-size: cover;
+	background-attachment: fixed; /*toan bo cac div nay lien 1 khoi*/
+	transform-style: preserve-3d; /*chuyen dong 3d*/
+	transform-origin: top;/*huong chuyen dong*/
+	transform: perspective(000px) rotateX(0deg) translate(0);
+	transition: 0.8s linear;  
+	z-index: 100;
+}
+.containerr div.flip:before{
+	transform: perspective(1000px) rotateX(90deg) translate(-50%);
+}
