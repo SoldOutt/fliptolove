@@ -136,71 +136,7 @@
 			<a href="https://www.facebook.com/minh19112001" type="button"><label for="">Link FB</label></a>
 		</div>
 	</div>
-	<!-- <script type="text/javascript">
-		var PageX,PageY;
-			function handler(e) {
-    	e = e || window.event;
-
-    	 PageX = e.pageX;
-    	 PageY = e.pageY;
-
-    	// IE 8
-    	if (PageX === undefined) {
-    	    PageX = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
-    	    PageY = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
-    	}
-
-    	console.log(PageX, PageY);
-		}
-
-		// attach handler to the click event of the document
-		if (document.attachEvent) document.attachEvent('onclick', handler);
-		else document.addEventListener('click', handler);	
-		
-
-		function offset(el) {
-   	 	var rect = el.getBoundingClientRect(),
-    	scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-    	scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    	return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-		}
-
-		// example use
-		var div = document.querySelector('.no');
-		var divOffset = offset(div);
-		var xx=60+divOffset.left;
-		var yy=40+divOffset.top;
-		console.log(divOffset.left, divOffset.top,xx,yy);
-		if(PageX >= divOffset.left && PageX <= xx &&PageY<=divOffset.top&&PageY>=yy ){
-			var rdx=(Math.random()*10+1);
-			var rdy=(Math.random()*10+1);
-			console.log(rdx,rdy,'a');
-			document.querySelector(".no").style.top=rdy+'%';
-			document.querySelector(".no").style.right=rdx+ '%';
-
-		}
-	</script> -->
-	<!-- <script type="text/javascript">
-		var PageX,PageY;
-		$(document).ready(function () {
-        $('body').mousemove(function (e) {
-            console.log(e.pageX,e.pageY);
-            PageX=e.pageX;
-            PageY=e.pageY;
-            console.log(PageX,PageY,2);
-        	});
-    	});
-    	console.log(PageX,PageY,'1');
-    	var rect = document.querySelector('.no').getBoundingClientRect();
-		console.log(rect.top, rect.right, rect.bottom, rect.left);
-		if(PageX>=rect.left&&PageX<=rect.right &&PageY>=rect.top&&PageY>=rect.bottom){
-			// console.log(1);
-			var rdx=(Math.random()*100+1);
-			var rdy=(Math.random()*100+1);
-			document.querySelector('.no').top = rdy + '%';
-			document.querySelector('.no').style.left = rdx + '%';
-		}
-	</script> -->
+	
 	<script type="text/javascript">
 		var x=document.querySelector('.no');
 		x.addEventListener('mouseover', move);
@@ -222,18 +158,7 @@
 			document.querySelector('.agree').style.display='flex';
 		}
 	</script>
-	<!-- <script type="text/javascript">
-		var message=document.querySelector('.content input');
-		// message.value='aaaa';
-		var love_message='đừng hỏi gì';
-		var d=0;
-		message.addEventListener('onkeydown', write)
-		function write(){
-			if(d>=love_message.length)break;
-			message.value+=love_message[d];
-			d++;
-		}
-	</script> -->
+	
 	<script>
 		var d=0;
 		function myFunction() {
